@@ -21,8 +21,10 @@ const { argv } = yargs(hideBin(process.argv))
     type: "boolean",
   });
 const { maybeCreateCertificates } = require("./ssl");
-// Importez le module 'node-fetch' si vous ne l'avez pas déjà fait
 import fetch from "node-fetch";
+CANVA_BACKEND_HOST= http://localhost:3001  node start.js; 
+
+
 
 // Récupérez la valeur de l'environnement CANVA_BACKEND_HOST
 const BACKEND_HOST = process.env.CANVA_BACKEND_HOST;
