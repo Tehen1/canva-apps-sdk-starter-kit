@@ -22,7 +22,7 @@ const { argv } = yargs(hideBin(process.argv))
   });
 const { maybeCreateCertificates } = require("./ssl");
 import fetch from "node-fetch";
-CANVA_BACKEND_HOST= http://localhost:3001  node start.js; 
+
 
 
 
@@ -47,7 +47,7 @@ const EXAMPLES_DIR = path.join(ROOT_DIR, "examples");
 const {
   CANVA_FRONTEND_PORT,
   CANVA_BACKEND_PORT,
-  CANVA_BACKEND_HOST,
+  CANVA_BACKEND_HOST, CANVA_BACKEND_HOST: SHOULD_ENABLE_ =  false,
   CANVA_APP_ID,
   CANVA_HMR_ENABLED,
 } = process.env;
