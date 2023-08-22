@@ -21,6 +21,19 @@ const { argv } = yargs(hideBin(process.argv))
     type: "boolean",
   });
 const { maybeCreateCertificates } = require("./ssl");
+// Importez le module 'node-fetch' si vous ne l'avez pas déjà fait
+const fetch = require("node-fetch");
+
+// Récupérez la valeur de l'environnement CANVA_BACKEND_HOST
+const BACKEND_HOST = process.env.CANVA_BACKEND_HOST;
+
+// Effectuez l'appel à l'API
+const response = await fetch(`${BACKEND_HOST}/custom-route`);
+const data = await response.json();
+
+// Utilisez les données de la réponse
+console.log("Données de la réponse :", data);
+
 
 const ROOT_DIR = path.join(__dirname, "..");
 const SRC_DIR = path.join(ROOT_DIR, "src");
