@@ -4,6 +4,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const { DefinePlugin } = require("webpack");
 const chalk = require("chalk");
 
+
 /**
  *
  * @param {Object} [options]
